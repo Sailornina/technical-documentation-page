@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Technical Documentation Page-FCC</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
+<body>
 <nav id="navbar">
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <header>React</header>
@@ -15,7 +17,7 @@
         <li><a class="nav-link" href="#Getting_Started">Getting Started</a></li>
         <li><a class="nav-link" href="#Try_React">Try React</a></li>
         <li><a class="nav-link" href="#Learn_React">Learn React</a></li>
-        <li><a class="nav-link" href="#JSX_:_JavaScript_+_XML">JSX: JavaScript + XML</a></li>></li>
+        <li><a class="nav-link" href="#JSX:_JavaScript_+_XML">JSX: JavaScript + XML</a></li>
         <li><a class="nav-link" href="#Staying_Informed">Staying Informed</a></li>
         <li><a class="nav-link" href="#Versioned_Documentation">Versioned Documentation</a></li>
         <li><a class="nav-link" href="#Something_Missing">Something Missing?</a></li>
@@ -139,29 +141,37 @@
                 AJAX requests, component state, and file structure.</p>
         </article>
     </section>
-    <section class="main-section" id="JSX_:_JavaScript_+_XML">
+    <section class="main-section" id="JSX:_JavaScript_+_XML">
         <header>
             <h1>JSK: JavaScript + XML</h1>
         </header>
         <article>
             <p>As you've seen, we've been using what looks like HTML in our React code, but it's not quite HTML. This is
-                <b>JSX</b>J, which stands for JavaScript XML.</p>
+                <b>JSX</b>J, which stands for JavaScript XML.
+            </p>
             <p>With JSX, we can write what looks like HTML, and also we can create and use our own XML-like tags. Here's
                 what JSX looks like assigned to a variable.</p>
             <code>
                 const heading = <h1 className="site-heading">Hello, React</h1></code>
-            <p>Using JSX is not mandatory for writing React. Under the hood, it's running <code>createElement</code>, which takes the tag, object containing the properties, and children of the component and renders the same information. The below code will have the same output as the JSX above.</p>
-            <code>const heading = React.createElement('h1', {className: 'site-heading'}, 'Hello, React!')</code> 
-            <p>JSX is actually closer to JavaScript, not HTML, so there are a few key differences to note when writing it.</p> 
-            <li><code>className</code> is used instead of <code>class</code> for adding CSS classes, as <code>class</code> is a reserved keyword in JavaScript.</li>
-            <li>Properties and methods in JSX are camelCase - <code>onclick</code> will become <code>onclick</code>.</li>
-            <li>Self-closing tags must end in a slash - e.g. <code><img /></code></li>
+            <p>Using JSX is not mandatory for writing React. Under the hood, it's running <code>createElement</code>,
+                which takes the tag, object containing the properties, and children of the component and renders the
+                same information. The below code will have the same output as the JSX above.</p>
+            <code>const heading = React.createElement('h1', {className: 'site-heading'}, 'Hello, React!')</code>
+            <p>JSX is actually closer to JavaScript, not HTML, so there are a few key differences to note when writing
+                it.</p>
+            <li><code class="language-text">className</code> is used instead of <code class="language-text">class</code> for adding CSS classes, as
+                <code class="language-text">class</code> is a reserved keyword in JavaScript.</li>
+            <li>Properties and methods in JSX are camelCase - <code class="language-text">onclick</code> will become <code class="language-text">onclick</code>.
+            </li>
+            <li>Self-closing tags must end in a slash - e.g. <code class="language-text">< img /></code></li>
 
-            <p>JavaScript expressions can also be embedded inside JSX using curly braces, including variables, functions, and properties.</p>
+            <p>JavaScript expressions can also be embedded inside JSX using curly braces, including variables,
+                functions, and properties.</p>
             <code>const name = 'Tania'
                 const heading = <h1>Hello, {name}</h1></code>
 
-            <p>JSX is easier to write and understand than creating and appending many elements in vanilla JavaScript, and is one of the reasons people love React so much.</p>
+            <p>JSX is easier to write and understand than creating and appending many elements in vanilla JavaScript,
+                and is one of the reasons people love React so much.</p>
         </article>
     </section>
     <section class="main-section" id="Staying_Informed">
@@ -192,25 +202,26 @@
     </section>
     <section class="main-section" id="Something_Missing">
         <header>
-            <h1>Something Missing</h1>
+            <h1>Something Missing?</h1>
+        </header>
             <article>
                 <p>If something is missing in the documentation or if you found some part confusing, please <a
                         href="https://github.com/reactjs/reactjs.org/issues/new">file an issue for the documentation
                         repository</a> with your suggestions for improvement, or tweet at the <a
                         href="https://twitter.com/reactjs">@reactjs account</a>. We love hearing from you!</p>
             </article>
-        </header>
     </section>
     <section class="main-section" id="Reference">
         <header>
             <h1>Reference</h1>
+        </header>    
             <article>
                 <p>All the documentation in this page is taken from <a href="https://reactjs.org/">Reactjs.org</a></p>
             </article>
-        </header>
     </section>
 
-
 </main>
+
+</body>
 
 </html>
