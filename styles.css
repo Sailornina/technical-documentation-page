@@ -62,6 +62,11 @@ header {
     padding: 20px;
     margin-bottom: 110px;
 }
+
+@media only screen and (max-width: 400px) {
+    #main-doc {
+      margin-left:-10px;
+}
   
 section article {
     color: #4d4e53;
@@ -84,4 +89,3 @@ code {
     line-height: 2;
     background-color: rgb(243, 222, 222);
 }
-
